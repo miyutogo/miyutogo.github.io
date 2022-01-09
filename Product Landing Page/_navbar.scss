@@ -1,0 +1,92 @@
+@import "colors";
+
+#nav-bar {
+  position: fixed;
+  left: -250px;
+  width: 190px;
+  height: 100vh;
+  background: $bgcolor3;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+#nav-bar header {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: $bgcolor3;
+  user-select: none;
+}
+
+#nav-bar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid black;
+  transition: 0.4s;
+}
+
+#nav-bar ul li:hover a {
+  padding-left: 50px;
+  color:#124559;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#nav-bar ul a i {
+  margin-right: 16px;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  cursor: pointer;
+  color: $btncolor1;
+  border-radius: 3px;
+}
+
+label #btn {
+  position: fixed;
+  right: 40px;
+  top: 25px;
+  font-size: 35px;
+  padding: 6px 12px;
+  transition: all 0.5s;
+  background: $bgcolor3;
+}
+
+label #cancel {
+  position: fixed;
+  z-index: 1111;
+  left: -195px;
+  top: 80vh;
+  font-size: 30px;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+  background: none;
+}
+ 
+#check:checked ~ #nav-bar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  right: 40px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+  left: 70px;
+}

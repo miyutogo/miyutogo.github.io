@@ -1,0 +1,48 @@
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: fit-content;
+  margin: 15px;
+  padding: 20px;
+}
+
+.location input[type="radio"] {
+  display: none;
+}
+
+.location label {
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  background: #2a2d37;
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+.location .tab {
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  order: 1;
+  display: none;
+  height: 200px;
+}
+
+.location .tab h2 {
+  font-size: 1.5em;
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+.location .tab p {
+  font-size: 1em;
+  text-indent: 20px;
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+.location input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.location input[type="radio"]:checked + label {
+  background: $bgcolor3;
+}

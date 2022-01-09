@@ -1,0 +1,130 @@
+@import "./variables";
+@import "./startGame";
+@import "./toggle";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Press Start 2P";
+}
+
+body {
+  background-color: $color1;
+}
+
+.background {
+  height: 100vh;
+  padding-top: 1px;
+}
+
+.title {
+  color: $color2;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 60px;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+.display {
+  color: $color2;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 214px;
+  margin: 0 auto;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color2;
+  min-width: 70px;
+  min-height: 70px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+#displayWinner {
+  margin-top: 1em;
+  font-size: 30px;
+}
+.playerX {
+  color: $color3;
+}
+
+.playerO {
+  color: $color4;
+}
+
+#control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-left: 50px;
+  width: 100px;
+}
+
+#control button {
+  margin-left: 1em;
+  background-color: $color4;
+  padding:1em;
+}
+
+@media only screen and (min-width: 767px) {
+  .title {
+    margin-top: 4%;
+    font-size: 40px;
+    margin-bottom: 1em;
+  }
+  .display {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  .container {
+    max-width: 304px;
+  }
+
+  .tile {
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  #control {
+    margin-top: 2em;
+    margin-left: 5.5em;
+    width: 100px;
+  }
+  
+  #control button {
+    margin-left: 1em;
+  }
+
+}
+
+.chooseSide {
+  display: none;
+  height: 600px;
+}
+
+main {
+  display: none;
+  height: 600px;
+}

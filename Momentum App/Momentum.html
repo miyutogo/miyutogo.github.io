@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Momentum App</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" onclick="showLink()">links</a>
+
+            <a href="#" onclick="searchItem()"><i class='fa fa-search'></i></a>
+                    <form action="https://google.com/search" target="_blank" type="GET" id="searchBar">
+                        <input type="search" name="q" id="searchInput">
+                    </form>
+
+            <span class="temperature"></span> 
+        </nav>
+    </header>
+
+    <div class="linksContainer" id="linksDisplay">
+        <ol>
+            <li><i class='fa fa-envelope'></i> <a href="https://www.gmail.com"> email</a></li>
+            <li><i class="fa fa-google"></i><a href="https://www.google.com"> google</a></li>
+            <li><i class="fa fa-facebook"></i> <a href="https://www.youtube.com/">facebook</a></li>
+            <li><i class="fa fa-youtube"></i> <a href="https://www.youtube.com">youtube</a></li>
+        </ol>
+    </div>
+
+    <div class="centerContainer">
+        <main>
+            <div class="timeContainer" id="clockWork">
+                <div class="timeDisplay" id="hour" onload="date()"></div><div class="timeDisplay" id="minute" onload="minute()"></div>
+            </div>
+
+            <br><br><br>
+
+            <div id="hideThis">
+                <form id="formDisplay" action="">                      
+                    <input type="text" placeholder="What is your name?" id="formID" value="">
+                    <br>
+                    <button onclick="greetMe(); hideInput(); showInput(); return false;"  id="greetingBtn" style="display: none;">Submit</button>
+                </form>
+             </div>
+
+             <div id="hideThis2">
+                 <form id="formQuote" action="">
+                        <input type="text" placeholder="Main focus for today" id="goal" value="" >
+                        <br>
+                        <button onclick="showFocus(); hideFocus(); displayFocus(); return false; "  id="greetingBtn" style="display: none;"> Submit</button>
+                 </form>
+            </div>
+
+
+             <div class="presentGreeting">
+                   <h4 id="goodDisplay"></h4> 
+                   <h4 id="greetingDisplay"></h4> 
+             </div>
+
+             <div class="mainFocus">
+                 <h4 id="hideFocus"> Main focus:</h4>
+                <h4 id="focusDisplay"></h4> 
+             </div>
+
+
+             
+            <div class="quote-parent">
+                 <div id="quote"></div> <br> <br>
+                  <div class="quote_btn" onclick="newQuote()">&#8635;</div>
+                <input type="text" id="quoteinput" placeholder="Add quote here">
+             </div>
+        </main>
+    </div>
+
+    
+
+    <footer>
+        
+        <a href="#" onclick="showToDo()" id="todo2Display">To Do</a>
+    </footer>
+
+
+    <div id="todoList">
+    <div id="todoHeader">
+        <span onclick="newElement(); return false;"  id="addToDo">+</span>
+        <input type="text" id="myInput" placeholder="Add here">
+    </div>
+
+        <ul id="listahan" style="list-style-type: none;">
+            <li>Code</li>
+            <li class="checked">Drink water</li>
+        </ul>
+    </div>
+
+
+
+    <script src="temperature.js"></script>
+    <script src="link.js"></script>
+    <script src="search.js"></script>
+    <script src="time.js"></script>
+    <script src="greeting.js"></script>
+    <script src="focus.js"></script>
+    <script src="todo.js"></script>
+    <script src="quotes.js"></script>
+</body>
+</html>
+
+
+
+
+

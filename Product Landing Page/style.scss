@@ -1,0 +1,145 @@
+@import "grid-template";
+@import "navbar";
+@import "colors";
+@import "dropdown";
+@import "emailform";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: $bgcolor1;
+}
+
+.logo {
+  display: flex;
+  padding-top: 10px;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.12);
+  transition: all 0.5s ease;
+}
+
+.img-title {
+  display: flex;
+  align-items: center;
+  width: 60vw;
+  height: 20vh;
+  z-index: 2;
+}
+
+.img-img1 {
+  justify-content: center;
+  width: 40vw;
+  height: 60vh;
+  z-index: 1;
+}
+
+// 2nd section//
+.page2 {
+  background-color: $bgcolor5;
+  z-index: auto;
+}
+
+.vid-container {
+  padding-left: 30px;
+  margin-right: 0;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
+  height: 70vh;
+}
+
+.quote1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 5vw;
+  color: $bgcolor1;
+}
+
+.trapezoid {
+  border-bottom: 100vh solid $bgcolor3;
+  border-left: 20vh solid transparent;
+  height: 0;
+  width: 33.83vw;
+}
+
+.gif2-container .jake {
+  padding-left: 30px;
+  margin-right: 0;
+  left: 50vw;
+  width: 15vw;
+}
+// 3rd section//
+.page3 {
+  background-image: url("./gif1.gif");
+  display: grid;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.header3-container {
+  padding: 40px;
+  width: 400px;
+}
+
+.header3-container h1 {
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua",
+    Georgia, serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+// 4th section //
+.page4 {
+  background-image: url("img8.jpg");
+  background-position: center;
+  display: grid;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.header4-container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  text-align: center;
+  width: 600px;
+  font-size: 70px;
+}
+
+.header4-container h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 600px;
+  font-size: 20px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}

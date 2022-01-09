@@ -1,0 +1,72 @@
+@import "./variables";
+
+.startGame {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  right: 0;
+  height: 70px;
+  color: $color2;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  font-family: "Press Start 2P";
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe,
+    4px 0 0 #4405fc;
+  animation: blink 1s steps(4, start) infinite;
+}
+
+.startBtn {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  bottom: 0;
+  right: 0;
+  padding-top: 15px;
+  padding-left: 5px;
+  height: 40px;
+  width: 45%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  background-color: $btncolor1;
+  text-shadow: -1px -1px $color5, 1px 1px $color2;
+  color: $btncolor2;
+  border-radius: 7px;
+  box-shadow: 0 0.2em $btncolor2;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .startGame {
+    top: 30%;
+    left: 1%;
+    right: 0;
+    height: 70px;
+    width: 90%;
+    font-size: 95px;
+    line-height: 60px;
+    letter-spacing: 5px;
+  }
+  .startBtn {
+    top: 60%;
+    left: 40%;
+    bottom: 0;
+    right: 0;
+    padding-top: 22px;
+    padding-left: 10px;
+    height: 55px;
+    width: 20%;
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+}

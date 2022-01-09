@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="startGame" id="playGame">Play Game</div> 
+    <div class="startBtn" id="strtBtn">START</div>
+    <div class="chooseSide" id="pickSide">
+            <h1 id="choose">Choose your side</h1>
+            <div class="XandO">
+                <button id="Xplayer">X</button> 
+                <button id="Oplayer">O</button>
+            </div>  
+    </div>
+    <main class="background" id="modal">
+        <section class="title">
+            <h1 id="gameTitle">Tic Tac Toe</h1>
+            <h1 id='displayWinner'> </h1>
+        </section>
+        <section class="container" id="gameBoard">
+            <div class="tile" id="0" onclick=" clickedCell(0)"></div>            
+            <div class="tile" id="1" onclick=" clickedCell(1)"></div>
+            <div class="tile" id="2" onclick=" clickedCell(2)"></div>
+            <div class="tile" id="3" onclick=" clickedCell(3)"></div>
+            <div class="tile" id="4" onclick=" clickedCell(4)"></div>
+            <div class="tile" id="5" onclick=" clickedCell(5)"></div>
+            <div class="tile" id="6" onclick=" clickedCell(6)"></div>
+            <div class="tile" id="7" onclick=" clickedCell(7)"></div>
+            <div class="tile" id="8" onclick=" clickedCell(8)"></div>
+            <div id="control">
+                <button id='undo'>Back</button>
+                <button id="reset">Reset</button> 
+                <button id='redo'>Next</button>
+            </div>
+        </section>
+    </main>
+    <script src='tictactoe.js'></script>
+</body>
+</html>

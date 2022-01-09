@@ -1,0 +1,189 @@
+$color1: #c0c0c0;
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: block;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color1;
+}
+
+nav {
+  padding: 10px;
+  background-color: $color1;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: $color1;
+}
+
+li {
+  list-style: none;
+  background-color: $color1;
+}
+
+.logo {
+  background-color: $color1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1px;
+}
+
+img {
+  height: 50px;
+  padding: 1px;
+  background-color: $color1;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  text-align: center;
+  gap: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+select {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 15px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bday-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.region-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.region-container select {
+  width: 340px;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-container input {
+  width: 340px;
+}
+
+.phone-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-container input {
+  width: 340px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}

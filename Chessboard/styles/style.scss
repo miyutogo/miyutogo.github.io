@@ -1,0 +1,57 @@
+@import "./movement";
+@import "./keyframes";
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 10% 10% 20% 10% 10% 20%;
+  grid-template-rows: 10% 10% 20% 20% 20% 20%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(bg.jpg);
+  background-size: cover;
+}
+
+.base {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.board {
+  border: 1px solid;
+  height: 748px;
+  width: 748px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 10px rgb(92, 92, 100);
+}
+
+//box class//
+.box1,
+.box2 {
+  height: 93.5px;
+  width: 93.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.box1 {
+  background-color: gray;
+}
+
+.box2 {
+  background-color: lightcyan;
+}
+
+h1 {
+  display: inline-block;
+  animation: move1 2s ease-in;
+  color: white;
+}

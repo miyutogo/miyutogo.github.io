@@ -1,0 +1,48 @@
+//movements label//
+.pawnD2 {
+  position: absolute;
+  animation: move1 1s ease-in 3s forwards;
+}
+
+.pawnF7 {
+  position: absolute;
+  animation: move2 1s ease-in 4.5s forwards;
+}
+
+.bishopC1 {
+  position: absolute;
+  animation: move3 1s ease-in 6s forwards, move5 1s ease-in 9s forwards,
+    move8half 0.5s ease-in 13.5s forwards;
+}
+
+.pawnH7 {
+  position: absolute;
+  animation: move4 1s ease-in 7.5s forwards;
+}
+
+.pawnG7 {
+  position: absolute;
+  animation: move6 1s ease-in 10.5s forwards, move8 1s ease-in 13.5s forwards;
+}
+
+.pawnE2 {
+  position: absolute;
+  animation: move7 1s ease-in 12s forwards;
+}
+
+.queenD1 {
+  position: absolute;
+  animation: move9 1s ease-in 15s forwards;
+}
+
+.checkmate-container {
+  grid-column-start: 4;
+  grid-row-start: 4;
+  opacity: 0;
+  text-align: center;
+  align-self: start;
+  justify-self: center;
+  font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif;
+  font-weight: 200;
+  animation: cmate1 1.5s ease-in 18s forwards;
+}

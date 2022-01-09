@@ -1,0 +1,68 @@
+.chooseSide {
+  top: 65%;
+  left: 25%;
+  height: 100px;
+}
+
+.chooseSide h1 {
+  position: absolute;
+  top: 20vh;
+  left: 1vw;
+  min-width: 60px;
+  min-height: 70px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.chooseSide .XandO {
+  position: absolute;
+  top: 50vh;
+  left: 22vw; 
+  width: 50vw;
+  height: 20vh;
+}
+
+.XandO button{
+    width: 50vw;
+    height: 1vh;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border: none;
+    background: $color4;
+    border-radius: 5px;
+    color: $color1;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 767px) {
+    .chooseSide .XandO {
+        top: 50vh;
+        left: 35vw; 
+        width: 40vw;
+        height: 20vh;
+      }
+
+    .chooseSide h1 {
+        top: 20vh;
+        left: 6.1em;
+        font-size: 80px;
+        line-height: 90px;
+      }
+
+    .XandO button{
+        width: 15vw;
+        height: 7vh;
+        font-size: 45px;
+        font-weight: 500;
+    }
+  }

@@ -1,0 +1,142 @@
+
+// keyframes //
+@keyframes move1 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(0) translateY(-185px);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(0) translateY(185px);
+  }
+}
+
+@keyframes move3 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(375px) translateY(-375px);
+  }
+}
+
+@keyframes move4 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(0) translateY(92.5px);
+  }
+}
+
+@keyframes move5 {
+  0% {
+    transform: translateX(375) translateY(-375);
+  }
+
+  100% {
+    transform: translateX(467.5px) translateY(-282.5px);
+  }
+}
+
+@keyframes move6 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(0) translateY(185px);
+  }
+}
+
+@keyframes move7 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(0) translateY(-185px);
+  }
+}
+
+@keyframes move8 {
+  0% {
+    transform: translateX(0) translateY(185px);
+  }
+
+  100% {
+    transform: translateX(92.5px) translateY(277.5px);
+  }
+}
+
+@keyframes move8half {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move9 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(375px) translateY(-375px);
+  }
+}
+
+@keyframes cmate1 {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+    visibility: hidden;
+  }
+  25% {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: scale(1, 1);
+    visibility: visible;
+  }
+
+  50% {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: scale(5, 5);
+    visibility: visible;
+  }
+
+  75% {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: scale(5, 5);
+    visibility: visible;
+  }
+
+  100% {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(1, 1);
+    visibility: hidden;
+    animation-duration: 3s;
+  }
+}

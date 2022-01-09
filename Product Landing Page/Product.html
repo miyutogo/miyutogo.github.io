@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c86a45a8e9.js" crossorigin="anonymous"></script>
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <section class="main" id="pageone">
+        <div class="header-container">
+            <header id="header">
+                <div id="header-logo">
+                    <img class="logo" src="logo.png" alt="divoom logo">
+                </div>
+
+                <div class="header-nav">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                         <i class="fas fa-bars" id="btn"></i>
+                         <i class="fas fa-times" id="cancel"></i>
+                    </label>
+                    <nav id="nav-bar">
+                        <header> <img class="logo" src="logo.png" alt="divoom logo"> </header>
+                        <ul>
+                            <li><a class="nav-link" href="#pageone"></i>Feature</a></li>
+                            <li><a class="nav-link" href="#pagetwo">Product Video</a></li>
+                            <li><a class="nav-link"  href="#pagethree">Location</a></li>
+                            <li><a class="nav-link" href="#pagefour">Support</a></li>
+                        </ul>
+                  </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="img-container">
+            <div class="productname">
+                <img src="title.png" class="img-title">
+            </div>
+            <div class="img1">
+                <img src="img1.png" class="img-img1">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="page2" id="pagetwo">
+        <div class="trapezoid">
+            <br /><br /><br /><br /><br /><br /><br />
+        </div>
+   
+        <div class="vid-container">
+            <video id="video" loop="loop" autoplay="autoplay" controls>
+                    <source src="Divoom Timebox Evo official product video (2).mp4" type="video/mp4">
+                    Your browser does not support the video.
+             </video>
+        </div>
+
+        <div class="quote-container">
+            <h2 class="quote1">"The only good system is a sound system."</h2>
+        </div>
+
+        <div class="gif2-container">
+            <img src="gif2.gif" class="jake">
+        </div>
+
+    </section>
+
+    <section class="page3" id="pagethree">
+        <div class="header3-container">
+                <h1>Find us in</h1>
+        </div>
+        <div class="location-container">
+        <div class="location">
+            <input type="radio" id="tab1" name="location" checked="checked">
+            <label for="tab1">Makati City</label>
+            <div class="tab">
+                <h2>Ayala Malls Circuit</h2>
+                <p>10am to 7pm</p>
+                <br>
+                <h2>Glorietta</h2>
+                <p>10am to 8pm</p>
+                <br>
+                <h2>Greenbelt</h2>
+                <p>10am to 7pm</p>
+            </div>
+    
+            <input type="radio" id="tab2" name="location">
+            <label for="tab2">Muntinlupa City</label>
+            <div class="tab">
+                <h2>Alabang Town Center</h2>
+                <p>11am to 9pm</p>
+            </div>
+    
+            <input type="radio" id="tab3" name="location">
+            <label for="tab3">Parañaque City</label>
+            <div class="tab">
+                <h2>Ayala Malls Manila Bay</h2>
+                <p>10am to 8pm</p>
+            </div>
+
+            <input type="radio" id="tab4" name="location">
+            <label for="tab4">Pasig City</label>
+            <div class="tab">
+                <h2>Ayala Malls Feliz</h2>
+                <p>10am to 9pm</p>
+            </div>
+
+            <input type="radio" id="tab5" name="location">
+            <label for="tab5">Quezon City</label>
+            <div class="tab">
+                <h2>Ayala Malls Cloverleaf</h2>
+                <p>10am to 8pm</p>
+                <br>
+                <h2>Ayala Malls Vertis North</h2>
+                <p>10am to 7pm</p>
+                <br>
+                <h2>Fairview Terraces</h2>
+                <p>10am to 7pm</p>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section class="page4" id="pagefour">
+        <div class="header4-container">
+            <h2 id="h2page4">Join our newsletter</h2>
+            <h4>get weeky access to our best deals</h4>
+        </div>
+        <div class="form-container">
+            <form id="form" method="get">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+                <input id="submit" type="submit" value="Get Notified" class="btn" />
+            </form>
+        </div>
+        <p id="demo">Hi</p>
+        <button type="button" onclick="myFunction()">Upgrade!</button>
+
+    </section>
+</body>
+    <script src="script.js"></script>
+</html>
