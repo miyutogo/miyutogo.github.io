@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+            display: fixed;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: #FFC5C4;
+        }
+
+        nav{
+            position: relative;
+            top: 0;
+            height: 1.5cm;
+            background-color: black;
+        }
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;    
+        }
+
+        nav ul li {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            padding-top: 5px;
+            color: #333;
+            text-decoration: none;
+            font-size: 40px;
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder;
+            color:pink;
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+
+        .img {
+            position: fixed; 
+            bottom: 0;
+            right: -1vw;
+            z-index: -1; 
+            width: 70vw;
+        }
+
+        .text-container{
+            margin: 50px;
+            width: 45vw;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: justify;
+            text-indent: 2cm;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .logo-icon{
+            position: fixed;
+            bottom: 0;
+            right:0;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <section id="home-container" >
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Biography.html">BIOGRAPHY</a></li>
+                    <li><a href="Platforms.html">PLATFORMS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="info-container"> 
+            <div class="img-container">
+                <img class="img" src="pokimane.jpg"  >
+            </div>
+            <div class="text-container">
+                <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+                <p>
+                    One of the most successful female streamers, Imane anys, better known as Pokimane, was born in Morocco on 14 May 1996. She is a Moroccan-Canadian who also 
+                    attended McMaster University. Pokimane dropped out of her Chemical Engineering degree to pursue streaming full time on Twitch.
+                    She has since established herself as a content creator on platforms like Twitch, Youtube, and Tiktok.
+                    She is also part of Offline TV - an online social entertainment group of content creators based in Los Angeles, California.
+                <br><br>
+                    Pokimane has been in the streaming industry since 2013. She was then the receipient of Best Streamer of the Year Award at The Shorty Awards in 2018.
+                    Pokimane is part of the top 10 most followed streamer in Twitch. Naming her the most followed female streamer in Twitch.
+                    <br><br>
+                    Pokimane has always been the type of person to give back to the community. She then decided to give back to the twitch community by donating $10,000 to 
+                    random streamers. Her selection, she explains, was based on two criteria: "Either to streamers and communities that I already know and inspired me or to 
+                    some newer communities that I'm just discovering now." She always try her best to give back every now and then even outside the streaming community.
+                </p>
+            </div>
+
+        </div>
+
+
+            <div class="logo">
+                <img src="mct.png" class="logo-icon">
+            </div>
+    </section>
+</body>
+</html>

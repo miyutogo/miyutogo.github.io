@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+            display: fixed;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: auto;
+            background-color: #FFC5C4;
+        }
+
+        nav{
+            position: relative;
+            top: 0;
+            height: 1.5cm;
+            background-color: black;
+        }
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;    
+        }
+
+        nav ul li {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            padding-top: 5px;
+            color: #333;
+            text-decoration: none;
+            font-size: 40px;
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder;
+            color:pink;
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        h1{
+            padding: 10px;
+            font-size: 1.5cm;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .socmed-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .li-logo {
+            list-style: none;
+            padding: 10px;
+        }
+
+        img {
+            width: 200px;
+            height: 125px;
+        }
+
+        .logo-icon{
+            position: fixed;
+            bottom: 0;
+            right:0;
+            height: 70px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <section class="plaftorms-container">
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Biography.html">BIOGRAPHY</a></li>
+                    <li><a href="Platforms.html">PLATFORMS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="info-container">
+            <h1>Pokimane's Social Medias</h1>
+                <div class="socmed-contianer">
+                   <ul>
+                       <li class="li-logo"><a href="https://www.twitch.tv/pokimane"> <img src="twitch icon.png" alt="twitch"  href="https://www.twitch.tv/pokimane"> </a></li>
+                       <li class="li-logo"><a href="https://www.youtube.com/channel/UChXKjLEzAB1K7EZQey7Fm1Q"> <img src="youtube icon.png" alt="youtube"> </a></li>
+                       <li class="li-logo"><a href="https://www.tiktok.com/@poki?lang=en"> <img src="tiktok.png" alt="tiktok"> </a></li>
+                       <li class="li-logo"><a href="https://www.instagram.com/pokimanelol/?hl=en"> <img src="ig.png" alt="instagram"> </a></li>
+                 </ul>
+                </div>
+        </div>
+        
+        <div class="logo">
+            <img src="mct.png" class="logo-icon">
+        </div>
+    </section>
+
+
+</body>
+</html>
